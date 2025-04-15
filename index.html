@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crascito - Elegance That Resonates</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/25Xhyc42/20250414-153144.png">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img id="preloader-img" src="https://i.postimg.cc/xTK2Q5hm/20250414-170703.png" alt="Loading..." />
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo" onclick="location.href='index.html'">
+        <img src="https://i.postimg.cc/25Xhyc42/20250414-153144.png" alt="Crascito Logo" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#torque">Torque</a></li>
+        <li><a href="#watches">Watches</a></li>
+        <li><a href="#gadgets">Gadgets</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="main-home">
+    <div class="main-logo" data-aos="fade-up">
+      <img src="https://i.postimg.cc/gJTLDN4r/Real-Brand-Logo.png" alt="Crascito Full Logo"/>
+    </div>
+    <div class="slogan" data-aos="fade-up" data-aos-delay="200">
+      <h1>Elegance That Resonates</h1>
+    </div>
+  </section>
+
+  <!-- Coupon Banner -->
+  <section class="coupon-banner" data-aos="zoom-in">
+    <p>Use <strong>CRASCITO50</strong> on ₹499+ | <strong>CRASCITO100</strong> on ₹999+</p>
+  </section>
+
+  <!-- Products -->
+  <section id="torque" class="products-section">
+    <h2 data-aos="fade-up">Exclusive Torque Series</h2>
+
+    <!-- Velocity Green -->
+    <div class="product-card" data-aos="fade-up">
+      <img src="https://i.postimg.cc/DwcYrsMJ/Green-1.png" alt="Velocity Green">
+      <h3>Velocity Green</h3>
+      <p>Gyro Alloy Wheel | Metal Strap | 6 Months Warranty</p>
+      <p class="price"><del>₹1799</del> <strong>₹699</strong></p>
+      <button onclick="buyNow('Velocity Green')" class="btn-buy">Buy Now</button>
+    </div>
+
+    <!-- Velocity Red -->
+    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://i.postimg.cc/QCGJXNmZ/Red-1.png" alt="Velocity Red">
+      <h3>Velocity Red</h3>
+      <p>Gyro Alloy Wheel | Metal Strap | 6 Months Warranty</p>
+      <p class="price"><del>₹1799</del> <strong>₹699</strong></p>
+      <button onclick="buyNow('Velocity Red')" class="btn-buy">Buy Now</button>
+    </div>
+
+    <!-- McLaren Inspired -->
+    <div class="product-card premium" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://i.postimg.cc/6qtHCsbZ/Orange-1.png" alt="McLaren Watch">
+      <h3>McLaren Inspired (Limited)</h3>
+      <p>Premium Orange Edition | Gift Packaging ₹30 | 1 Year Warranty</p>
+      <p class="price"><del>₹2199</del> <strong>₹849</strong></p>
+      <button onclick="buyNow('McLaren Inspired')" class="btn-buy premium-btn">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Contact us: <a href="https://www.instagram.com/crascito">Instagram</a> | Email: <a href="mailto:crascito@gmail.com">crascito@gmail.com</a></p>
+      <p>Pickup available in New Delhi, India</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
